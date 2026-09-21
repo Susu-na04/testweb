@@ -1,0 +1,168 @@
+body {
+    background-color: #fae8f4;
+    text-align: center;
+    font-family: "Itim", cursive;
+    font-size: 20px;
+    color: #4c222d;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.cake-body {
+    position: relative;
+    display: inline-block;
+    margin-top: 167px;
+    margin-bottom: 20px;
+}
+.cake-img {
+    width: 550px;
+    display: block;
+}
+.candle {
+    width: 30px;
+    height: 110px;
+    background: #4d3dd6;
+    border-color: #4d3dd6;
+    border-style: solid;
+    border-radius: 10px;
+    position: absolute;
+    cursor: pointer;
+}
+.flame {
+    width: 25px;
+    height: 37px;
+    background: linear-gradient(to top, red, orange, yellow);
+    border-radius: 80% 80% 50% 50%;
+    position: absolute;
+    top: -39px;
+    left: 10%;
+    transform-origin: bottom center;
+    animation: flicker 0.6s infinite alternate;
+}
+/* ไฟกระพริบ */
+@keyframes flicker {
+    0% { transform: scaleY(1); }
+    100% { transform: scaleY(1.15); }
+}
+/* ไฟดับ */
+.flame.off {
+    animation: blowout 0.4s forwards;
+}
+@keyframes blowout {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(0) translateY(-8px); opacity: 0; }
+}
+.text {
+    font-size: 30px;
+    font-weight: bold;
+    color: #4c222d;
+    margin-bottom: 30px;
+}
+.next-btn {
+    padding: 10px 30px;
+    font-size: 20px;
+    font-family: "Itim", cursive;
+    background: linear-gradient(#ffb3c1, #ff85a1);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px 12px #ff85a159;
+    transition: all 0.2s ease-in-out;
+}
+/* แตะปุ่ม */
+.next-btn:hover {
+    transform: translateY(-2px) scale(1.05);
+    background: linear-gradient(#feadbc, #fa7e9b);
+    box-shadow: 0 8px 18px #ff85a180;
+}
+.text-page {
+    display: none;
+}
+.text-page.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    animation: fadein 0.5s ease-out forwards;
+}
+#cake-all {
+    display: none;
+}
+#cake-all.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    animation: fadein 3s ease-out forwards;
+}
+@keyframes fadein {
+    from { transform : translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1;}
+}
+@keyframes cakeout {
+    0% { transform: translateY(0) scale(1); opacity: 1;}
+    100% { transform: translateY(40px) scale(0.5); opacity: 0;}
+}
+#cake-all.fade-out {
+    animation: cakeout 1s ease-in-out forwards;
+}
+.letter-box {
+    background: #f3dcc3;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px #e5b5c080;
+    width: 90%;
+    max-width: 550px;
+    border: 5px dashed #f9aea6;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.fromme {
+    text-align: right;
+    font-size: 15px;
+    color: #632f3d;
+    margin-top: 80px;
+}
+.gif {
+    width: 150px;
+    pointer-events: none;
+    position: absolute;
+    z-index: 10;
+}
+.catsmile-gif {
+    bottom: -20px;
+    left: -20px;
+}
+.catrose-gif {
+    right: -300px;
+    bottom: -100px;
+}
+.dogspin-gif {
+    left: -300px;
+    bottom: -125px;
+}
+.stars1 {
+    width: 170px;
+    object-fit: cover;
+    top: -100px;
+    left: -20px;
+}
+.stars2 {
+    width: 170px;
+    object-fit: cover;
+    top: -100px;
+    right: -20px;
+}
+.dogbd-gif {
+    right: -167px;
+    bottom: 250px;
+}
+.catkiss-gif {
+    left: -230px;
+    bottom: 220px;
+}

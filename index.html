@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--ข้อมูลพฐ-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test2609</title>
+    <!--รูปแบบ-->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!--หน้าข้อความ-->
+    <div class="page-all">
+        <!--หน้า1-->
+        <div class="text-page active" id="page1">
+            <p class="text"> This is my first website </p>
+            <!--หน้า1ไป2-->
+            <button class="next-btn" onclick="nextstep('page1', 'page2')"> Next </button>
+        </div>
+        <!--หน้า2-->
+        <div class="text-page" id="page2">
+            <p class="text"> So I wanted you to be the first to try it out </p>
+            <!--หน้า2ไป3-->
+            <button class="next-btn" onclick="nextstep('page2', 'page3')"> Next </button>
+        </div>
+        <!--หน้า3-->
+        <div class="text-page" id="page3">
+            <p class="text"> 1 2 3 4... </p>
+            <!--หน้า3ไปเค้ก-->
+            <button class="next-btn" onclick="nextstep('page3', 'cake-all')"> Next </button>
+        </div>
+
+    </div>
+
+    <!--ตัวเค้กเทียน-->
+    <div id="cake-all">
+        <div class="cake-body">
+            <!--เทียน-->
+            <div class="candle" style="top: -15%; left: 31%;" onclick="blowout(this)">
+                <div class="flame"></div>
+            </div>
+
+            <div class="candle" style="top: -15%; left: 65%;" onclick="blowout(this)">
+                <div class="flame"></div>
+            </div>
+
+            <div class="candle" style="top: -22%; left: 47.8%;" onclick="blowout(this)">
+                <div class="flame"></div>
+            </div>
+            <!--เค้ก-->
+            <img src="image/cake.png" class="cake-img">
+        </div>
+
+        <h1> Blow out the candles! </h1>
+    </div>
+
+    <!--จดหมาย-->
+    <div id="letter" class="text-page">
+        <div class="letter-box">
+            <h2> 🎉 26/09 🎉 </h2>
+            <p> Happy Birthday to the prettiest girl born today! </p>
+            <p> Wish you all the happiness and lots of wealth—seriously, stop bleeding money already! As for love... well, you know how it goes. </p>
+            <p> This is the very first website I’ve ever built, and I always intended to make it as a little gift for you. </p>
+            <p> HBD & Luv u 4ever naaa 💗 </p>
+            <p class="fromme"> From UR BFF★ </p>
+
+            <img src="image/catsmile.gif" class="gif catsmile-gif">
+            <img src="image/catrose.gif" class="gif catrose-gif">
+            <img src="image/dogspin.gif" class="gif dogspin-gif">
+            <img src="image/stars.gif" class="gif stars1">
+            <img src="image/stars.gif" class="gif stars2">
+            <img src="image/dogbd.gif" class="gif dogbd-gif">
+            <img src="image/catkiss.gif" class="gif catkiss-gif">
+        </div>
+    </div>
+</body>
+
+    <script src="script.js"></script>
+</html>
