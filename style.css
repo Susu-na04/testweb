@@ -6,8 +6,7 @@ body {
     color: #4c222d;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 .cake-body {
     position: relative;
