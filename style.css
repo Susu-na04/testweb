@@ -165,3 +165,33 @@ html, body {
     left: -230px;
     bottom: 220px;
 }
+@media (max-width: 600px) {
+    .text-page, #letter, .letter-box {
+        width: 90% !important;
+        max-width: 360px !important;
+        margin: 0 auto !important;
+        padding: 15px !important;
+        box-sizing: border-box !important;
+        position: relative !important;
+    }
+    .letter-box h2 {
+        font-size: 1.1rem !important;
+    }
+    .text-page p, .letter-box p {
+        font-size: 0.95rem !important;
+        line-height: 1.5 !important;
+    }
+    .gif {
+        max-width: 50px !important;
+        height: auto !important;
+  }
+    .cake-all img, .cake-img, .text-page img, img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    .next-btn, button {
+        font-size: 0.9rem !important;
+        padding: 8px 16px !important;
+        margin-top: 10px;
+    }
+}
