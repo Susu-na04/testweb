@@ -175,23 +175,40 @@ html, body {
         position: relative !important;
     }
     .letter-box h2 {
-        font-size: 1.1rem !important;
+        font-size: 1rem !important;
     }
-    .text-page p, .letter-box p {
-        font-size: 0.95rem !important;
+    .text-page p, .letter-box p, .fromme {
+        font-size: 0.7rem !important;
         line-height: 1.5 !important;
     }
     .gif {
-        max-width: 50px !important;
+        max-width: 100px !important;
         height: auto !important;
-  }
-    .cake-all img, .cake-img, .text-page img, img {
-        max-width: 100% !important;
+    }
+    #cake-all {
+        width: 100% !important;
+        text-align: center;
+    }
+    #cake-all h1 {
+        font-size: 1.3rem !important;
+        margin-top: 15px;
+    }
+    .cake-body {
+        position: relative !important;
+        width: 200px !important;
+        margin: 0 auto !important;
+    }
+    .cake-img {
+        width: 100% !important;
         height: auto !important;
+        display: block;
+    }
+    .candle {
+        transform: scale(0.65) !important;
+        transform-origin: bottom center;
     }
     .next-btn, button {
         font-size: 0.9rem !important;
         padding: 8px 16px !important;
-        margin-top: 10px;
     }
 }
