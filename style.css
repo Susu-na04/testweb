@@ -186,17 +186,25 @@ html, body {
         height: auto !important;
     }
     #cake-all {
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
         width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
         text-align: center;
+        box-sizing: border-box;
     }
     #cake-all h1 {
         font-size: 1.3rem !important;
         margin-top: 15px;
+        text-align: center;
     }
     .cake-body {
         position: relative !important;
-        width: 200px !important;
-        margin: 0 auto !important;
+        width: 220px !important;
+        margin: 0 auto 20px auto !important;
     }
     .cake-img {
         width: 100% !important;
@@ -204,8 +212,18 @@ html, body {
         display: block;
     }
     .candle {
-        transform: scale(0.65) !important;
-        transform-origin: bottom center;
+        position: absolute !important;
+        width: 14px !important;
+        height: 45px !important;
+        box-sizing: border-box;
+    }
+    .flame {
+        position: absolute !important;
+        top: -18px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 12px !important;
+        height: 18px !important;
     }
     .next-btn, button {
         font-size: 0.9rem !important;
