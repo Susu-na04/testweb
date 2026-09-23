@@ -1,4 +1,4 @@
-body {
+html, body {
     background-color: #fae8f4;
     text-align: center;
     font-family: "Itim", cursive;
@@ -7,6 +7,9 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .cake-body {
     position: relative;
